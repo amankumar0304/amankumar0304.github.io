@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman Kumar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"
+        >Aman Kumar
+        <h4>Web Designer and Developer</h4></a
+      >
+      <div class="toggle"></div>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="contact-link">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <div class="hero">
+        <h1>Hey There !<br />It's Me.</h1>
+        <p>
+          Currently a Student at Lovely Professional University, Phagwara,
+          Punjab, India. Actively looking for a web development role and
+          opportunities.
+        </p>
+        <a
+          href="https://drive.google.com/file/d/1zUqoKU6CSkwrHOzXI5fzqE6NX0J2KwUC/view?usp=sharing"
+          >Download Resume<img src="images/arrow.png"
+        /></a>
+      </div>
+    </section>
+    <section id="projects">
+      <h4>Selected Work</h4>
+      <h2>Projects</h2>
+      <div class="project">
+        <div class="image-box"><img src="images/1.png" /></div>
+        <div class="text-box">
+          <h5>01</h5>
+          <h3>Form based Login System | Authorization and Authentication</h3>
+          <p>
+            Learning new technology is always a fun experience... Started
+            learning Node Js, Express Js, and MongoDB and implemented what I
+            have learned by building a form-based login system which has
+            complete authorization and authentication and allows user to sign up
+            and only allows registered users to sign in. Stores user info in
+            MongoDB cloud Database. The front end is quite simple in design
+            because the major part was learning backend coding and focusing only
+            on the backend part...
+          </p>
+          <br />
+          <a href="https://github.com/amankumar0304/authorization"
+            >View Github<img src="images/arrow.png"
+          /></a>
+        </div>
+      </div>
+      <div class="project">
+        <div class="image-box"><img src="images/2.png" /></div>
+        <div class="text-box">
+          <h5>02</h5>
+          <h3>Nike Shoe Landing Page Website | Web Design</h3>
+          <p>
+            Wanted to use animations for a long time and finally implemented
+            them in this project. Designed and Created a landing page for a Nike
+            shoe model using HTML, CSS, JavaScript. For animations I have used
+            GSAP. GSAP is an industry standard JavaScript animation library from
+            GreenSock that lets you craft high-performance animations that work
+            in every major browser.
+          </p>
+          <br />
+          <a href="https://github.com/amankumar0304/nikeLandingPage"
+            >View Github<img src="images/arrow.png"
+          /></a>
+        </div>
+      </div>
+      <div class="project">
+        <div class="image-box"><img src="images/3.png" /></div>
+        <div class="text-box">
+          <h5>03</h5>
+          <h3>The Indian Vegan | Resturant Frontend Website Design</h3>
+          <p>
+            I came across several websites designs and got some inspiration to
+            design a front end for a restaurant website, hope you like it. I
+            have made it using HTML, CSS, javascript, and JQuery. I have also
+            provided the GitHub pages link below, so do check the actual work
+            and do provide your valuable feedbacks.....and any suggestions for
+            improvements will be highly appreciable..
+          </p>
+          <br />
+          <a href="https://github.com/amankumar0304/TheIndianVegan"
+            >View Github<img src="images/arrow.png"
+          /></a>
+        </div>
+      </div>
+      <div class="project">
+        <div class="image-box"><img src="images/4.png" /></div>
+        <div class="text-box">
+          <h5>04</h5>
+          <h3>
+            The Frozen Feast | Ice Cream Palour Landing Page Website Design.
+          </h3>
+          <p>
+            Designed a Landing page few days back in Figma for a ice cream
+            parlour Website and thought of implementing the same using HTML, CSS
+            and JavaScript. The page is also completely responsive. The design
+            is pretty simple yet very interesting to work upon.
+          </p>
+          <br />
+          <a href="https://github.com/amankumar0304/SampleProject"
+            >View Github<img src="images/arrow.png"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h4>Web Development and Designing</h4>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>NodeJs</li>
+        <li>ExpressJs</li>
+        <li>MongoDB</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>React</li>
+        <li>Figma</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h4>Contact</h4>
+      <h2>Wanna Discuss Something? Let's Connect</h2>
+      <a href="mailto:amanKumaryadav0304@gmail.com"
+        >Mail Me at: amanKumaryadav0304@gmail.com</a
+      >
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/aman-kumar-725b9b184/"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://www.facebook.com/people/Aman-Kr/100007892146576"
+            >Facebook</a
+          >
+        </li>
+        <li><a href="https://twitter.com/Aman15415899">Twitter</a></li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      TweenMax.from(".logo", 2, {
+        y: "-20",
+        opacity: "0",
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from("header ul li a", 2, {
+        x: "20",
+        delay: 1,
+        opacity: "0",
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".hero h1", 2, {
+        x: "20",
+        opacity: "0",
+        delay: 1.5,
+        ease: Expo.easeInOut,
+      });
+      TweenMax.from(".hero p", 2, {
+        opacity: "0",
+        delay: 1.5,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".hero a", 2, {
+        y: "20",
+        opacity: "0",
+        delay: 1.7,
+        ease: Expo.easeInOut,
+      });
+    </script>
+  </body>
+</html>

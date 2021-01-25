@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 150px;
+  z-index: 1000;
+  display: flex;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+header.sticky {
+  padding: 20px 150px;
+}
+.contact-link {
+  color: #e15901;
+  padding-left: 20px;
+  border-left: 1px solid rgb(255, 255, 255, 0.5);
+}
+header .logo {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 24px;
+  text-decoration: none;
+}
+header .logo h4 {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.2);
+  letter-spacing: 2px;
+}
+header ul {
+  position: relative;
+  text-transform: uppercase;
+  display: flex;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  font-family: "Roboto Condensed", sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 0 34px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 700;
+}
+header ul li a:hover {
+  color: rgb(255, 255, 255, 0.5);
+}
+.contact-link:hover {
+  color: rgb(255, 102, 0);
+}
+section {
+  height: 100vh;
+  background: url(images/hero-back.jpg) no-repeat;
+  background-size: cover;
+  padding: 0px 150px;
+}
+.hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero h1 {
+  font-size: 125px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 150px;
+}
+.hero p {
+  font-family: "Roboto", sans-serif;
+  padding-top: 25px;
+  width: 40%;
+  color: rgba(255, 255, 255, 0.5);
+}
+.hero a {
+  color: rgb(225, 89, 1);
+  text-transform: uppercase;
+  padding-top: 50px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+.hero a img {
+  transition: 0.5s;
+}
+.hero a:hover img {
+  padding-left: 10px;
+}
+#projects {
+  height: 100%;
+  background: #1b1b1b;
+}
+
+#projects h4 {
+  text-align: center;
+  padding-top: 200px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2);
+  letter-spacing: 2px;
+}
+#projects h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 54px;
+  letter-spacing: 2px;
+}
+#projects .project {
+  padding-top: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.project .image-box {
+  width: 50%;
+}
+.project .image-box img {
+  height: 450px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.project .image-box img:hover {
+  filter: brightness(50%);
+}
+.project .text-box {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+.project .text-box h5 {
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.2);
+}
+.project .text-box p {
+  padding-top: 50px;
+  font-family: "Roboto", sans-serif;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.project .text-box a {
+  color: rgb(225, 89, 1);
+  text-transform: uppercase;
+  padding-top: 30px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.project .text-box a img {
+  transition: 0.5s;
+}
+
+.project .text-box a:hover img {
+  padding-left: 10px;
+}
+#skills {
+  height: 100%;
+  background: url(images/back2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+#skills h4 {
+  padding-top: 200px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2);
+  letter-spacing: 2px;
+}
+#skills h2 {
+  font-size: 54px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#skills ul {
+  padding-top: 20px;
+}
+#skills ul li {
+  list-style: square;
+  padding-top: 10px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-right: 350px;
+  padding-left: 10px;
+  cursor: pointer;
+  padding-bottom: 5px;
+  transition: 0.5s;
+  color: rgba(255, 255, 255, 0.5);
+}
+#skills ul li:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#contact {
+  background: #1b1b1b;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact h4 {
+  text-align: center;
+  padding-top: 300px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2);
+  letter-spacing: 2px;
+}
+#contact h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 44px;
+  letter-spacing: 2px;
+}
+#contact a {
+  font-family: "Roboto", sans-serif;
+  padding-top: 20px;
+  color: #e15901;
+}
+#contact ul {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  padding: 20px 0px;
+}
+#contact ul li {
+  list-style: none;
+}
+#contact ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+}
+#contact ul li a:hover {
+  color: #fff;
+}
+@media (max-width: 968px) {
+  header {
+    padding: 10px 20px;
+  }
+  header.sticky {
+    padding: 10px 20px;
+  }
+  header .logo {
+    font-size: 16px;
+  }
+  header .logo h4 {
+    font-size: 10px;
+  }
+  header ul li a {
+    display: none;
+  }
+  section {
+    padding: 0px 40px;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 50px;
+  }
+  .hero p {
+    padding-top: 25px;
+    font-size: 16px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .hero a {
+    padding-top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    margin-top: 50px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .hero a img {
+    display: none;
+  }
+  #projects {
+    padding-bottom: 20px;
+  }
+  #projects h4 {
+    padding-top: 100px;
+  }
+  #projects h2 {
+    font-size: 34px;
+  }
+  #projects .project {
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .project .image-box img {
+    height: 200px;
+  }
+
+  .project .text-box {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .project .text-box h5 {
+    font-size: 34px;
+  }
+  .project .text-box p {
+    padding-top: 20px;
+  }
+
+  .project .text-box a {
+    padding-top: 20px;
+  }
+  .project .text-box a img {
+    transition: 0.5s;
+  }
+
+  .project .text-box a:hover img {
+    padding-left: 10px;
+  }
+
+  #skills {
+    background: #1b1b1b;
+    justify-content: center;
+    align-items: center;
+  }
+  #skills h4 {
+    text-align: center;
+    padding-top: 100px;
+  }
+  #skills h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  #skills ul {
+    padding-top: 15px;
+  }
+  #skills ul li {
+    padding-right: 150px;
+  }
+
+  #contact h4 {
+    padding-top: 100px;
+  }
+  #contact h2 {
+    font-size: 34px;
+  }
+  #contact ul {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
